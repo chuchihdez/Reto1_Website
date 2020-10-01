@@ -1,0 +1,290 @@
+/* *
+   STYLE SHEET
+   Define a responsive website
+ */
+
+.container {
+    width: 100%;
+    /*  margin: 0px auto;
+    font-size: 1em;
+    */
+    font-family: 'Roboto', Serif;
+    font-size: 16px;
+}
+
+/**--- HEADER  -----*/
+header {
+    text-align: center;
+    /*border: 1px solid #ccc;*/
+    background: #f1c1c1;
+}
+
+a {
+    color: #252525;
+    text-decoration: none;
+}
+
+/**--- NAV (MENU)-----*/
+nav {
+    overflow: hidden;
+    background: #444;
+    /* margin-top: 0.5%;*/
+    margin-bottom: 0.5%;
+}
+
+nav ul {
+    list-style-type: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    float: none;
+    padding: 3px 10px;
+    margin: 2px;
+    background: #fafafa;
+    border-radius: 4px;
+}
+
+nav ul li:hover {
+    background-color: #ccc;
+    text-decoration: underline;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/**--- SECTION  & ASIDE (AREAS)-----*/
+section,
+aside {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/**--- SECTION  (LEFT-AREA)-----*/
+section {
+    float: left;
+    width: 70%;
+    background: #4dad6a;
+}
+
+/**--- SECTION - LIST-----*/
+#sectionList {
+    display: flex;
+    flex-direction: column;
+}
+
+.framework {
+    display: flex;
+    background-color: #2f88fd;
+    justify-content: space-around;
+
+}
+
+.frameworkName {
+    background-color: yellow;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.frameworkImg {
+    background-color: orange;
+    width: 15%;
+    margin-right: -10%;
+}
+
+.frameworkImg img {
+    background-color: #252525;
+    height: 100%;
+    width: 45%;
+}
+
+/**--- ASIDE  (RIGHT-AREA)-----*/
+aside {
+    float: right;
+    width: 25%;
+    background: #d6c5c5;
+}
+
+aside a {
+    color: #ED2228;
+}
+
+aside a:hover,
+#listWebgrafia a:hover {
+    color: #44364d;
+}
+
+#listWebgrafia a {
+    color: #2f88fd;
+}
+
+/**--- FOOTER -----*/
+footer {
+    position: fixed;
+    Width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(158, 11, 11);
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+/**
+  ------- MEDIA QUERYs --------
+ */
+
+/* pantalla maximo 980px */
+@media screen and (max-width:1080px) {
+    .container {
+        width: 98%;
+    }
+
+    section {
+        width: 68%;
+    }
+}
+
+/* pantalla maximo 700px */
+@media screen and (max-width:700px) {
+
+    /**--- NAVIGATION & SECTION & FOOTER (Common)-----*/
+    aside,
+    section {
+        float: none;
+        width: 96%;
+        font-size: 1.2em;
+    }
+
+    nav,
+    section {
+        font-size: 1.2em;
+    }
+
+    /**--- ASIDE  (RIGHT-AREA)-----*/
+    aside {
+        margin-top: 5px;
+        background: #333;
+        color: #fff;
+    }
+
+    nav ul {
+        float: none;
+        clear: both;
+    }
+
+    /**--- SECTION - LIST-----*/
+    #sectionList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .framework {
+        display: flex;
+        background-color: #2f88fd;
+        justify-content: space-around;
+
+    }
+
+    .frameworkName {
+        background-color: yellow;
+        width: 55%;
+    }
+
+    .frameworkImg {
+        background-color: orange;
+        width: 15%;
+        margin-right: -20%;
+    }
+
+    .frameworkImg img {
+        background-color: #252525;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+/* pantalla maximo 480px */
+@media screen and (max-width:480px) {
+
+    /**--- NAVIGATION & SECTION & FOOTER (Common)-----*/
+    nav,
+    section {
+        font-size: 1.5em;
+    }
+
+    section,
+    aside {
+        width: 94%;
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px 10px 10px 0px;
+    }
+
+    /**--- NAVIGATION -----*/
+    nav ul {
+        display: table;
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    /**--- ASIDE  (RIGHT-AREA)-----*/
+    aside {
+        display: block;
+        background: #333;
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    /**--- SECTION - LIST-----*/
+    #sectionList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .framework {
+        display: flex;
+        background-color: #2f88fd;
+        justify-content: space-around;
+
+    }
+
+    .frameworkName {
+        background-color: yellow;
+        width: 55%;
+    }
+
+    .frameworkImg {
+        background-color: orange;
+        width: 40%;
+        margin-right: 1%;
+    }
+
+    .frameworkImg img {
+        background-color: #252525;
+        height: 100%;
+        width: 100%;
+    }
+}
