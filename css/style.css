@@ -3,20 +3,37 @@
    Define a responsive website
  */
 
+body {
+    height: 100vh;
+    background-color: #E8615F;
+}
+
 .container {
     width: 100%;
-    /*  margin: 0px auto;
     font-size: 1em;
-    */
-    font-family: 'Roboto', Serif;
+    font-family: 'Roboto',
+        sans-serif;
     font-size: 16px;
+
+}
+
+h1,
+h2 {
+    font-family: 'Caveat',
+        cursive;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #EC6AE9;
 }
 
 /**--- HEADER  -----*/
 header {
-    text-align: center;
-    /*border: 1px solid #ccc;*/
-    background: #f1c1c1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
 }
 
 a {
@@ -27,8 +44,6 @@ a {
 /**--- NAV (MENU)-----*/
 nav {
     overflow: hidden;
-    background: #444;
-    /* margin-top: 0.5%;*/
     margin-bottom: 0.5%;
 }
 
@@ -38,7 +53,8 @@ nav ul {
     padding: 0px;
     width: 100%;
     display: table;
-    text-align: center;
+    text-align: left;
+
 }
 
 nav ul li {
@@ -46,12 +62,13 @@ nav ul li {
     float: none;
     padding: 3px 10px;
     margin: 2px;
-    background: #fafafa;
+    background: #257BD3;
+
     border-radius: 4px;
 }
 
 nav ul li:hover {
-    background-color: #ccc;
+    background-color: #66B138;
     text-decoration: underline;
 }
 
@@ -59,7 +76,7 @@ nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #333;
+    color: white;
 }
 
 /**--- SECTION  & ASIDE (AREAS)-----*/
@@ -73,7 +90,8 @@ aside {
 section {
     float: left;
     width: 70%;
-    background: #4dad6a;
+    background: #082435;
+    color: #dddddd;
 }
 
 /**--- SECTION - LIST-----*/
@@ -84,26 +102,24 @@ section {
 
 .framework {
     display: flex;
-    background-color: #2f88fd;
     justify-content: space-around;
-
+    margin-bottom: 5px;
 }
 
 .frameworkName {
-    background-color: yellow;
+    color: #fff;
     width: 80%;
     display: flex;
     align-items: center;
 }
 
 .frameworkImg {
-    background-color: orange;
     width: 15%;
-    margin-right: -10%;
+    margin-right: -15%;
 }
 
 .frameworkImg img {
-    background-color: #252525;
+    border: 1px solid #fff;
     height: 100%;
     width: 45%;
 }
@@ -112,7 +128,11 @@ section {
 aside {
     float: right;
     width: 25%;
-    background: #d6c5c5;
+    /* background: #F3BB4C;*/
+    background: #9e6d0c;
+    height: 100%;
+    color: black;
+    margin-bottom: 2em;
 }
 
 aside a {
@@ -121,7 +141,7 @@ aside a {
 
 aside a:hover,
 #listWebgrafia a:hover {
-    color: #44364d;
+    color: #5e2d7c;
 }
 
 #listWebgrafia a {
@@ -136,7 +156,8 @@ footer {
     bottom: 0;
     left: 0;
     padding: 10px 0px 10px 0px;
-    background-color: rgb(158, 11, 11);
+    background-color: black;
+    color: #fff;
     text-align: center;
 }
 
@@ -178,8 +199,7 @@ footer a {
     /**--- ASIDE  (RIGHT-AREA)-----*/
     aside {
         margin-top: 5px;
-        background: #333;
-        color: #fff;
+        font-size: 1.3em;
     }
 
     nav ul {
@@ -195,24 +215,19 @@ footer a {
 
     .framework {
         display: flex;
-        background-color: #2f88fd;
         justify-content: space-around;
-
     }
 
     .frameworkName {
-        background-color: yellow;
         width: 55%;
     }
 
     .frameworkImg {
-        background-color: orange;
         width: 15%;
         margin-right: -20%;
     }
 
     .frameworkImg img {
-        background-color: #252525;
         height: 100%;
         width: 100%;
     }
@@ -253,8 +268,6 @@ footer a {
     /**--- ASIDE  (RIGHT-AREA)-----*/
     aside {
         display: block;
-        background: #333;
-        color: #fff;
         font-size: 1.5em;
     }
 
@@ -266,24 +279,19 @@ footer a {
 
     .framework {
         display: flex;
-        background-color: #2f88fd;
         justify-content: space-around;
-
     }
 
     .frameworkName {
-        background-color: yellow;
         width: 55%;
     }
 
     .frameworkImg {
-        background-color: orange;
         width: 40%;
         margin-right: 1%;
     }
 
     .frameworkImg img {
-        background-color: #252525;
         height: 100%;
         width: 100%;
     }
